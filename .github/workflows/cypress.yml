@@ -28,7 +28,7 @@ jobs:
 
     - name: Run Cypress Smoke Test
       run: |
-        npx cypress run --headless --spec 'smoke_test_spec.js'
+        npx cypress run --headless --spec 'cypress/integration/smoke_test_spec.js'
       
     - name: Send Results to Slack
       run: |
