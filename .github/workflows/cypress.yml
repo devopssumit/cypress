@@ -26,6 +26,11 @@ jobs:
         npm install
         npm install cypress --save-dev
 
+    - name: List cypress directory
+      run: |
+        ls -R cypress/
+      
+
     - name: Run Cypress Smoke Test
       run: |
         npx cypress run --headless --spec './cypress/integration/smoke_test_spec.js'
