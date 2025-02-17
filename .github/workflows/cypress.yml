@@ -38,4 +38,3 @@ jobs:
           STATUS="failure"
         fi
         curl -X POST -H 'Content-type: application/json' --data '{"text": "Cypress Smoke Test Result: '${STATUS}'"}' ${{ secrets.SLACK_WEBHOOK_URL }}
-
